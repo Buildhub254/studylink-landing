@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /tmp/cc-agent/68041503/project && (git rev-parse --git-dir > /dev/null 2>&1 || git init -b main) && git config user.email 'buildhub254@gmail.com' && git config user.name 'Buildhub254' && (git remote get-url origin > /dev/null 2>&1 || git remote add origin https://github.com/Buildhub254/studylink-landing.git) && git add -A && (git diff --cached --quiet || git commit -m 'Auto-sync: update project files') 2>/dev/null || true",
+            "timeout": 30,
+            "statusMessage": "Syncing to git..."
+          }
+        ]
+      }
+    ]
+  }
+}
