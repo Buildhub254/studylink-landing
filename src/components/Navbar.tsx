@@ -27,7 +27,7 @@ export default function Navbar() {
           : 'transparent',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
         borderBottom: scrolled
-          ? '1px solid rgba(181, 68, 110, 0.15)'
+          ? '1px solid rgba(142, 58, 92, 0.18)'
           : '1px solid transparent',
       }}
     >
@@ -42,6 +42,7 @@ export default function Navbar() {
           justifyContent: 'space-between',
         }}
       >
+        {/* Logo */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <Brain size={28} color="var(--accent)" strokeWidth={2} />
           <span
@@ -56,6 +57,7 @@ export default function Navbar() {
           </span>
         </div>
 
+        {/* Desktop nav */}
         <ul
           style={{
             display: 'flex',
@@ -84,6 +86,7 @@ export default function Navbar() {
           ))}
         </ul>
 
+        {/* Desktop actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }} className="desktop-nav">
           <button
             style={{
@@ -123,6 +126,7 @@ export default function Navbar() {
           </button>
         </div>
 
+        {/* Mobile: Sign Up + Hamburger */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }} className="mobile-nav">
           <button
             style={{
@@ -145,6 +149,7 @@ export default function Navbar() {
         </div>
       </nav>
 
+      {/* Mobile menu */}
       {menuOpen && (
         <div
           style={{

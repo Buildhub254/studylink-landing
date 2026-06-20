@@ -75,13 +75,14 @@ export default function Features() {
               el.style.transform = 'translateY(0)'
             }}
           >
+            {/* Icon container */}
             <div
               style={{
                 width: '52px',
                 height: '52px',
                 borderRadius: '14px',
-                background: 'rgba(181, 68, 110, 0.15)',
-                border: '1px solid rgba(181, 68, 110, 0.25)',
+                background: 'rgba(142, 58, 92, 0.14)',
+                border: '1px solid rgba(142, 58, 92, 0.28)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',

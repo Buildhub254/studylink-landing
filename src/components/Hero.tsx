@@ -14,13 +14,14 @@ export default function Hero() {
         padding: '120px 24px 80px',
       }}
     >
+      {/* Badge */}
       <div
         style={{
           display: 'inline-flex',
           alignItems: 'center',
           gap: '8px',
-          background: 'rgba(181, 68, 110, 0.12)',
-          border: '1px solid rgba(181, 68, 110, 0.3)',
+          background: 'rgba(142, 58, 92, 0.12)',
+          border: '1px solid rgba(142, 58, 92, 0.32)',
           borderRadius: '24px',
           padding: '6px 14px',
           marginBottom: '32px',
@@ -44,6 +45,7 @@ export default function Hero() {
         </span>
       </div>
 
+      {/* Headline */}
       <h1
         style={{
           fontSize: 'clamp(2.4rem, 7vw, 4rem)',
@@ -60,13 +62,14 @@ export default function Hero() {
         <span
           style={{
             color: 'var(--accent)',
-            textShadow: '0 0 32px rgba(181, 68, 110, 0.45)',
+            textShadow: '0 0 36px rgba(142, 58, 92, 0.55)',
           }}
         >
           Succeed Every Day.
         </span>
       </h1>
 
+      {/* Subtext */}
       <p
         style={{
           color: 'var(--text-secondary)',
@@ -80,6 +83,7 @@ export default function Hero() {
         Grade 10.
       </p>
 
+      {/* CTA Button */}
       <button
         style={{
           display: 'inline-flex',
@@ -91,18 +95,18 @@ export default function Hero() {
           fontWeight: 700,
           padding: '15px 32px',
           borderRadius: '32px',
-          boxShadow: '0 0 32px rgba(181, 68, 110, 0.35)',
+          boxShadow: '0 0 28px rgba(142, 58, 92, 0.4)',
           transition: 'background 0.2s, box-shadow 0.2s, transform 0.15s',
           marginBottom: '28px',
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.background = 'var(--accent-light)'
-          e.currentTarget.style.boxShadow = '0 0 48px rgba(181, 68, 110, 0.5)'
+          e.currentTarget.style.boxShadow = '0 0 44px rgba(142, 58, 92, 0.6)'
           e.currentTarget.style.transform = 'translateY(-2px)'
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.background = 'var(--accent)'
-          e.currentTarget.style.boxShadow = '0 0 32px rgba(181, 68, 110, 0.35)'
+          e.currentTarget.style.boxShadow = '0 0 28px rgba(142, 58, 92, 0.4)'
           e.currentTarget.style.transform = 'translateY(0)'
         }}
       >
@@ -110,6 +114,7 @@ export default function Hero() {
         <ArrowRight size={18} strokeWidth={2.5} />
       </button>
 
+      {/* Trust badges */}
       <div
         style={{
           display: 'flex',
